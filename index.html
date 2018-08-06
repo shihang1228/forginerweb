@@ -1,0 +1,600 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/iconfont/iconfont.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--google fonts-->
+<!-- animated-css -->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.css">
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- animated-css -->
+<script src="js/modernizr.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<style>
+	/*轮播图*/
+	.swiper-text{position: absolute;width: 62%;left: 50%;margin-left: -31%;text-align: center;color: #fff;height: 252px;top: 50%;margin-top: -76px;}
+	.swiper-text .swiper-h1{font-size: 70px;font-weight: bold;margin-bottom: 28px;}
+	.swiper-text .swiper-prod{font-weight: bold;font-size: 21px;margin-bottom: 34px;}
+	.swiper-text .btn-readmore{background: #142951;color:#fff;padding: 10px 34px;}
+	.swiper-text .icon-right{position: relative;top: 2px;}
+    /*新闻左侧*/
+    .index-news{background: #ebeff2;padding:60px 0;}
+    .index-news .color-news-title{color:#071d4a;font-size: 28px;font-weight: bold;}
+    .index-news .news-cont{padding-left: 0;}
+    .index-news .news-cont li{list-style: none;line-height: 66px;border-bottom: 1px solid #d0d3d6;font-size:16px;}
+    .index-news .read-more-wrap{margin-bottom: 30px;}
+    .read-more{color:#666;font-size:16px;margin-top: 36px;display:inline-block;font-weight: bold;}
+    .news-index-right{text-align:right;}
+    .news-index-right .news-right-img{border:10px solid #fff;box-shadow: 0 0 6px 2px #a3b6c5;margin-right: 10px;width: 96%;}
+    .news-index-right .news-right-cont{text-align: left;font-size: 14px;}
+    .news-index-right .news-right-cont .news-index-p1{color:#999;margin-bottom: 20px;}
+    .news-index-right .news-right-cont .news-index-p2{color:#555;line-height: 27px;}
+    /*事件*/
+    .index-event{background:url("images/bg-event.png") repeat center 0;padding:60px 0;}
+    .index-event .ev-title{font-size:28px;font-weight:bold;color:#071d4a;margin-bottom:10px;}
+    .index-event .ev-list{padding:0;margin-bottom:57px;}
+    .index-event .ev-list .ev-item{padding:27px 0;border-bottom:1px solid #e3e3e3;list-style:none;}
+    .ev-item .ev-item-left{width:85px;height:85px;border:1px solid #0b3991;padding:2px;box-sizing:border-box;text-align:center;color:#fff;margin-right:20px;}
+    .ev-item .ev-item-left .eil-top{background:#0b3991;font-size: 18px;height: 51px;}
+    .ev-item .ev-item-left .eil-bottom{background:#0a2456;font-size:12px;line-height: 28px;height: 28px;}
+    .ev-item .ev-item-right{padding-right:0;}
+    .ev-item-right .eir-p1{color:#003333;font-size:18px;margin-bottom:20px;}
+    .ev-item-right .eir-p2{color:#666;font-size:14px;position:relative;bottom:-5px;}
+    .index-event .btn-event-more{display:inline-block;width:180px;height:50px;text-align:center;line-height:50px;color:#fff;background-image: linear-gradient(to right,#395da2,#394f79);}
+    /*事件右侧*/
+    .ev-title-more{position:absolute;top:9px;right:0;font-size:16px;color:#666;font-weight:400;}
+    .index-event .ev-title.evr-title{margin-bottom:37px;}
+    .evr-content .evr-cont-wrap .evr-wrap-public:first-child{margin-bottom:20px;}
+    .evr-content .evr-cont-item-top{width:100%;height:210px;box-shadow:1px 1px 5px 3px #e0dfdf;}
+    .evr-content .evr-cont-item-top .evr-itemtop-img{height:140px;}
+    .evr-content .evr-cont-item-bottom{width:100%;height:270px;box-shadow:1px 1px 5px 3px #e0dfdf;}
+    .evr-content .evr-cont-item-bottom .evr-itembottom-img{height:202px;}
+    .evr-content .imgpub{width:100%;height:100%;object-fit:cover;}
+    .evr-content .erv-intro{line-height: 24px;font-size: 16px;padding: 8px 4px;box-sizing: border-box;}
+    /*video*/
+    .index-video{padding:80px 0;background:#fff;}
+    .index-video .vi-left .vi-img{width:100%;height:100%;object-fit:cover;}
+    .index-video .vi-h3{font-size:24px;color:#333;margin:40px 0;}
+    .index-video .vi-intro{font-size:14px;color:#555;line-height:30px;}
+    /*campus*/
+    .index-campus{padding:80px 0;background:#fff2e9;}
+    .index-campus .camp-img-wrap img{width:100%;height:100%;object-fit:cover;}
+    .index-campus .campus-text-wrap{border:1px solid #0b3991;padding:20px;box-sizing:border-box;line-height:33px;}
+    .index-campus .camp-text{font-size:14px;color:#555;}
+    .index-campus .campus-items{height:295px;margin-bottom:16px;}
+    .index-campus .camp-times{position:absolute;bottom:20px;left:20px;}
+    .index-campus .campus-img-cont{padding:0;}
+    .index-campus .camp-items{padding:0;}
+    .index-campus .campus-col{padding:0 8px;}
+@media(max-width:992px){
+	/*轮播图*/
+	.swiper-text{margin-top: -91px;}
+	.swiper-text .swiper-h1{font-size: 48px;}
+	.swiper-text .swiper-prod{font-size: 17px;}
+    /*新闻*/
+    .index-news{padding:33px 0;}
+    .news-img{padding:0;}
+    .news-img .news-right-img{width:100%;margin-bottom: 14px;}
+    /*campus*/
+    .index-campus .campus-items{height:246px;}
+    .index-campus .campus-text-wrap{padding:15px;}
+    .index-campus .camp-text{font-size:14px;line-height:34px;}
+}
+@media(max-width:768px){
+	/*轮播图*/
+	.swiper-container{height:329px;}
+	.swiper-container .img-swiper{width:100%;height:100%;object-fit: cover;}
+	.swiper-text{width:96%;margin-left: -48%;}
+	.swiper-text .swiper-h1{font-size: 27px;}
+	.swiper-text .swiper-prod{font-size: 14px;}
+    /*事件*/
+    .index-event .ev-left{padding:0;}
+    .ev-item .ev-item-left{width:25%;margin-right:0;float: left;}
+    .ev-item .ev-item-right{width:75%;float: left;padding-right:0;}
+    .col-sm-4{width: 33.33333333%;float:left;padding:0 3px;}
+    .evl-btnmore{text-align:center;margin-bottom:57px;}
+    .evr-content .evr-cont-item-top{height:165px;}
+    .evr-content .evr-cont-item-top .evr-itemtop-img{height:95px;}
+    .evr-content .evr-cont-item-bottom{height:200px;}
+    .evr-content .evr-cont-item-bottom .evr-itembottom-img{height:130px;}
+    .evr-content .evr-cont-wrap .evr-wrap-public:first-child{margin-bottom:10px;}
+    .evr-content .erv-intro{font-size:12px;}
+    /*video*/
+    .index-video .vi-h3{border-top:1px solid #ccc;padding-top:40px;}
+    /*campus*/
+    .index-campus .campus-items{height:150px;}
+    .index-campus .campus-text-wrap{padding:6px;}
+    .index-campus .camp-text{font-size:11px;line-height:22px;}
+}
+@media(max-width:320px){
+	.swiper-text .swiper-h1{font-size: 24px;}
+}
+
+</style>
+</head>
+<body>
+<!--header-top start here-->
+<div class="top-header">
+	<div class="container">
+		<div class="top-header-main">
+			<div class="col-md-6 header-address wow bounceInLeft" data-wow-delay="0.3s">
+				<ul>
+					<li><a href="#">E-Mail</a></li>
+					<li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Social Media</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-6 top-social wow bounceInRight" data-wow-delay="0.3s">
+			    <ul>
+			    	<li class="relative language-cont">
+                        <h5>
+                            <span class="text-language">Language</span>
+                            <i class="iconfont icon-bottom">&#x2302;</i>
+                        </h5>
+                        <!--language下拉 start-->
+                        <ul class="language-wrap">
+                            <li><a href="">中文</a></li>
+                            <li><a href="">英语</a></li>
+                            <li><a href="">日语</a></li>
+                            <li><a href="">中文</a></li>
+                            <li><a href="">英语</a></li>
+                            <li><a href="">日语</a></li>
+                        </ul>
+                        <!--language下拉 end-->
+                    </li>
+			    	<li>
+                        <form action="">
+                            <div class="form-wrap">
+                                <input type="text" placeholder="Search..." class="search-input"/>
+                                <input type="submit" value="Go" class="btn-search"/>
+                            </div>
+                        </form>
+                    </li>
+			    </ul>
+			</div>
+		  <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--header-top end-->
+<!--header start-->
+<div class="header">
+	<div class="fixed-header">
+		<div class="navbar-wrapper">
+		    <div class="container">
+		        <nav class="navbar navbar-static-top">
+		            <div class="navbar-header">
+                        <div class="mobile-wrap">
+                            <!--移动端logo start-->
+                            <div class="mobile-logo-wrap">
+                                <a href="">
+                                    <img src="images/logo.png" width="180" alt="" class="mobile-logo"/>
+                                </a>
+                            </div>
+                            <!--移动端logo end-->
+
+                            <!--移动端 language start-->
+                            <div class="mobile-language-wrap">
+                                <div class="mobile-language-textcont">
+                                    <span class="mobile-text-language">Language</span>
+                                    <i class="iconfont icon-bottom">&#x2302;</i>
+                                </div>
+                                <!--language下拉 start-->
+                                <ul class="mobile-language-list">
+                                    <li><a href="" class="active">中文</a></li>
+                                    <li><a href="">英语</a></li>
+                                    <li><a href="">日语</a></li>
+                                    <li><a href="">中文</a></li>
+                                    <li><a href="">英语</a></li>
+                                    <li><a href="">日语</a></li>
+                                </ul>
+                                <!--language下拉 end-->
+                            </div>
+                            <!--移动端 language end-->
+                            <!--移动的导航 start-->
+    			            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-navlist" aria-expanded="false" aria-controls="mobile-navlist">
+    			                <span class="sr-only">Toggle navigation</span>
+    			                <span class="icon-bar"></span>
+    			                <span class="icon-bar"></span>
+    			                <span class="icon-bar"></span>
+    			            </button>
+                            <!--移动的导航 end-->
+							<!--移动下拉菜单 start-->
+							<ul id="mobile-navlist" class="mobile-navlist">
+								<li><a href="index.html">HOME</a></li>
+        		                <li><a href="">ABOUT XISU</a></li>
+        						<li><a href="">ACADEMICS</a></li>
+        						<li><a href="">RESEARCH</a></li>
+        						<li><a href="">ADMISSIONS</a></li>
+                                <li><a href="">CAMPUS LIFE</a></li>
+                                <li><a href="">CAMPUS RESOURCES</a></li>
+							</ul>
+							<!--移动下拉菜单 end-->
+                            <!--搜索按钮 start-->
+                            <div class="search-wrap">
+                                <a href="search.html"><img src="images/icon-search.png" class="icon-search" alt="" /></a>
+                            </div>
+                        </div>
+                        <!--搜索按钮 end-->
+			        </div>
+		            <div class="relative pcnavlist">
+		                <nav class="cl-effect-16" id="cl-effect-16">
+	                        <ul class="nav navbar-nav nav-left">
+        		                <li><a class="active" href="index.html">HOME</a></li>
+        		                <li><a href="">ABOUT XISU</a></li>
+        						<li><a href="">ACADEMICS</a></li>
+        						<li><a href="">RESEARCH</a></li>
+                            </ul>
+                            <div class="logo-wrap">
+                                <a class="navbar-brand" href="index.html"><img src="images/logo.png" /></a>
+                            </div>
+                            <ul class="nav navbar-nav nav-right">
+        						<li><a href="">ADMISSIONS</a></li>
+                                <li><a href="">CAMPUS LIFE</a></li>
+                                <li><a href="">CAMPUS RESOURCES</a></li>
+		                    </ul>
+		                </nav>
+		            </div>
+		            <div class="clearfix"></div>
+		        </nav>
+		    </div>
+		    <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--header end-->
+<!--banner start-->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+	    <div class="swiper-slide relative">
+	    	<a href="">
+	    		<div class="swiper-text">
+	    			<h1 class="swiper-h1">The Beautify University</h1>
+	    			<p class="swiper-prod">As the World Cup heads into the semi-finals, see how a Duke scholar uses soccer to explore politics, history and culture—in four languages</p>
+	    			<span class="btn-readmore">Read more <i class="iconfont icon-right">&#x2301;</i></span>
+	    		</div>
+	    		<img src="images/img-swiper.jpg" width="100%" alt="" class="img-swiper">
+	    	</a>
+	    </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<!--banner end-->
+<!--news start-->
+<div class="index-news">
+    <div class="container">
+        <div class="col-md-5">
+            <h2 class="color-news-title">News</h2>
+            <ul class="news-cont">
+                <li class="word-wrap">Deng Ying Awarded Shaanxi Provincial "May 1st",Deng Ying Awarded Shaanxi Provincial "May 1st"</li>
+                <li class="word-wrap">Deng Ying Awarded Shaanxi Provincial "May 1st"</li>
+                <li class="word-wrap">Deng Ying Awarded Shaanxi Provincial "May 1st"</li>
+            </ul>
+            <div class="text-right read-more-wrap">
+                <a href="" class="read-more">Read more <i class="iconfont icon-news-right">&#x2301;</i></a>
+            </div>
+        </div>
+        <div class="col-md-7 news-index-right">
+            <div class="news-img col-md-8 col-sm-12">
+                <img src="images/testimg2.jpg" class="news-right-img">
+            </div>
+            <div class="news-right-cont col-md-4 col-sm-12">
+                <p class="news-index-p1">Apr 30.2018</p>
+                <p class="news-index-p2">XISU Holds First WITTA HLIGH-end Forum form Trans-location Teacher`s Development and International Symposium on Transiation Education...</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--news end-->
+<!--event start-->
+<div class="index-event">
+    <div class="container">
+        <div class="col-md-5 ev-left">
+            <h2 class="ev-title">Academic Events</h2>
+            <ul class="ev-list">
+                <li class="ev-item">
+                    <div class="ev-item-left col-md-3 col-sm-3">
+                        <div class="eil-top">
+                            <p>JUL</p>
+                            <p>05</p>
+                        </div>
+                        <div class="eil-bottom">
+                            <p>11:00 am</p>
+                        </div>
+                    </div>
+                    <div class="ev-item-right col-md-9 col-sm-9">
+                        <p class="eir-p1 word-wrap">The Art and Techniques in Photography</p>
+                        <p class="eir-p2 word-wrap">July 5,2018 - 11:00am to 12:00pm</p>
+                        <p class="eir-p2 word-wrap">Sarah P.Duke Gardens</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="ev-item">
+                    <div class="ev-item-left col-md-3 col-sm-3">
+                        <div class="eil-top">
+                            <p>JUL</p>
+                            <p>05</p>
+                        </div>
+                        <div class="eil-bottom">
+                            <p>11:00 am</p>
+                        </div>
+                    </div>
+                    <div class="ev-item-right col-md-9 col-sm-9">
+                        <p class="eir-p1 word-wrap">The Art and Techniques in Photography</p>
+                        <p class="eir-p2 word-wrap">July 5,2018 - 11:00am to 12:00pm</p>
+                        <p class="eir-p2 word-wrap">Sarah P.Duke Gardens</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li class="ev-item">
+                    <div class="ev-item-left col-md-3 col-sm-3">
+                        <div class="eil-top">
+                            <p>JUL</p>
+                            <p>05</p>
+                        </div>
+                        <div class="eil-bottom">
+                            <p>11:00 am</p>
+                        </div>
+                    </div>
+                    <div class="ev-item-right col-md-9 col-sm-9">
+                        <p class="eir-p1 word-wrap">The Art and Techniques in Photography</p>
+                        <p class="eir-p2 word-wrap">July 5,2018 - 11:00am to 12:00pm</p>
+                        <p class="eir-p2 word-wrap">Sarah P.Duke Gardens</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+            </ul>
+            <div class="text-right evl-btnmore">
+                <a href="" class="btn-event-more">More ></a>
+            </div>
+        </div>
+        <div class="col-md-7 ev-right">
+            <h2 class="ev-title relative evr-title">
+                Notifications
+                <a href="" class="ev-title-more">MORE <i class="iconfont">&#x2301;</i></a>
+            </h2>
+            <div class="evr-content">
+                <div class="col-md-4 col-sm-4 col-sx-4 evr-cont-wrap">
+                    <div class="evr-cont-item-top evr-wrap-public">
+                        <div class="evr-itemtop-img"><img src="images/testimg.jpg" alt="" class="imgpub"/></div>
+                        <div class="word-wrap-line2 erv-intro">
+                            Notice on Change of XISU's Taxpayer ITaxpayer ITaxpayer ITaxpayer ITaxpayer I
+                        </div>
+                    </div>
+                    <div class="evr-cont-item-bottom evr-wrap-public">
+                        <div class="evr-itembottom-img"><img src="images/testimg3.png" alt="" class="imgpub"/></div>
+                        <div class="word-wrap-line2 erv-intro">
+                            Notice on Change of XISU's Taxpayer I
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-sx-4 evr-cont-wrap">
+                    <div class="evr-cont-item-bottom evr-wrap-public">
+                        <div class="evr-itembottom-img"><img src="images/testimg3.png" alt="" class="imgpub"/></div>
+                        <div class="word-wrap-line2 erv-intro">
+                            Notice on Change of XISU's Taxpayer I
+                        </div>
+                    </div>
+                    <div class="evr-cont-item-top evr-wrap-public">
+                        <div class="evr-itemtop-img"><img src="images/testimg.jpg" alt="" class="imgpub"/></div>
+                        <div class="word-wrap-line2 erv-intro">
+                            Notice on Change of XISU's Taxpayer I
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-sx-4 evr-cont-wrap">
+                    <div class="evr-cont-item-top evr-wrap-public">
+                        <div class="evr-itemtop-img"><img src="images/testimg.jpg" alt="" class="imgpub"/></div>
+                        <div class="word-wrap-line2 erv-intro">
+                            Notice on Change of XISU's Taxpayer I
+                        </div>
+                    </div>
+                    <div class="evr-cont-item-bottom evr-wrap-public">
+                        <div class="evr-itembottom-img"><img src="images/testimg3.png" alt="" class="imgpub"/></div>
+                        <div class="word-wrap-line2 erv-intro">
+                            Notice on Change of XISU's Taxpayer I
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--event end-->
+<!--video start-->
+<div class="index-video">
+    <div class="container">
+        <div class="col-md-7 vi-left">
+            <img src="images/testimg4.jpg" class="vi-img" alt="" />
+        </div>
+        <div class="col-md-5 vi-right">
+            <h3 class="vi-h3">Melbourne only 10 years, housing prices rose strongly</h3>
+            <p class="vi-intro word-wrap-line3">XISU Holds First WITTA High-end Forum for Translation Teachers' Development and International Symposium on Translation Education</p>
+        </div>
+    </div>
+</div>
+<!--video end-->
+<!--campus start-->
+<div class="index-campus">
+    <div class="container">
+        <div class="col-md-6 camp-items">
+            <div>
+                <div class="col-md-6 col-sm-5 col-xs-5 campus-col">
+                    <div class="campus-items campus-img-cont">
+                        <a href="" class="camp-img-wrap">
+                            <img src="images/testimg5.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-7 col-xs-7 campus-col">
+                    <div class="campus-text-wrap campus-items">
+                        <a href="">
+                            <p class="camp-text word-wrap-line5">Xi’an, the eternal city, records the great changes of the Chinese nation just like a living history book. Called Chang'an in ancienttimes, Xian is one of the birthplaces of the</p>
+                            <p class="camp-times">July 5,2018</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-md-6 col-sm-7 col-xs-7 campus-col">
+                    <div class="campus-text-wrap campus-items">
+                        <a href="">
+                            <p class="camp-text word-wrap-line5">Xi’an, the eternal city, records the great changes of the Chinese nation just like a living history book. Called Chang'an in ancienttimes, Xian is one of the birthplaces of the</p>
+                            <p class="camp-times">July 5,2018</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-5 col-xs-5 campus-col">
+                    <div class="campus-items campus-img-cont">
+                        <a href="" class="camp-img-wrap">
+                            <img src="images/testimg5.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 camp-items">
+            <div>
+                <div class="col-md-6 col-sm-5 col-xs-5 campus-col">
+                    <div class="campus-items campus-img-cont">
+                        <a href="" class="camp-img-wrap">
+                            <img src="images/testimg5.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-7 col-xs-7 campus-col">
+                    <div class="campus-text-wrap campus-items">
+                        <a href="">
+                            <p class="camp-text word-wrap-line5">Xi’an, the eternal city, records the great changes of the Chinese nation just like a living history book. Called Chang'an in ancienttimes, Xian is one of the birthplaces of the</p>
+                            <p class="camp-times">July 5,2018</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-md-6 col-sm-7 col-xs-7 campus-col">
+                    <div class="campus-text-wrap campus-items">
+                        <a href="">
+                            <p class="camp-text word-wrap-line5">Xi’an, the eternal city, records the great changes of the Chinese nation just like a living history book. Called Chang'an in ancienttimes, Xian is one of the birthplaces of the</p>
+                            <p class="camp-times">July 5,2018</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-5 col-xs-5 campus-col">
+                    <div class="campus-items campus-img-cont">
+                        <a href="" class="camp-img-wrap">
+                            <img src="images/testimg5.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--campus end-->
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+        <div class="gallery-top">
+            <h1><span class="color-fff">CONTACT</span> US</h1>
+        </div>
+		<div class="footer-main">
+			<div class="col-md-6 ftr-grid wow zoomIn" data-wow-delay="0.3s">
+				<form>
+                    <div class="single-grid wow fadeInLeft animated" data-wow-delay=".5s">
+                        <p class="label-name">NAME</p>
+                        <input type="text">
+                        <p class="label-name">EMAIL</p>
+                        <input type="text">
+                        <p class="label-name">MESSAGE</p>
+                        <textarea></textarea>
+                        <p>
+                            <input type="submit" value="Leaving a message">
+                        </p>
+                    </div>
+                </form>
+			</div>
+			<div class="col-md-6 ftr-grid ftr-mid wow zoomIn" data-wow-delay="0.3s">
+				<h3>OUR ADDRESS</h3>
+				<p class="p1">Xian Branch:No.108.South Zhuque Street. Xi`an NingBo Branch:Tower C,Century Square,South Liberation Road,Ningbo</p>
+				<p class="p1"><span class="icon-foot-pub"><i class="iconfont">&#x2301;</i></span>0086-29-85451431</p>
+                <p class="p1"><span class="icon-foot-pub"><i class="iconfont">&#x2305;</i></span>info@ace-climatic.com</p>
+                <p class="p1 p2"><span class="title">WE ARE SOCIAL</span>
+                    <span class="icon-foot-pub"><i class="iconfont">&#x2302;</i></span>
+                    <span class="icon-foot-pub"><i class="iconfont">&#x2304;</i></span>
+                    <span class="icon-foot-pub"><i class="iconfont">&#x2307;</i></span>
+                </p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--footer end here-->
+<!--copy rights start here-->
+<div class="copy-right">
+	<div class="container">
+		 <div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
+    	    <p>Copyright &copy; 2018 ACE TECHNOLOGY. All rights reserved.Liaoning ICP 11007858-3. Xi`an Shan Xi 11010802016198</p>
+    	 </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+    	/*swiper*/
+    	var swiper = new Swiper('.swiper-container', {
+	      	slidesPerView: 1,
+	      	spaceBetween: 30,
+	      	autoplay:2000,
+	      	loop: true,
+	      	speed:300,
+	      	pagination: {
+		        el: '.swiper-pagination',
+		        clickable: true,
+	      	},
+	    });
+    	/*pc端语言的显示和隐藏*/
+        $(".language-cont").on("click",function(e){
+            e.preventDefault();
+            $(this).find(".language-wrap").toggle();
+        })
+        /*pc端隐藏语言下拉框*/
+        $(document).on("click",function(e){
+            e.preventDefault();
+            if(($(e.target).closest(".language-wrap").length == 0) && ($(e.target).closest(".language-cont").length == 0)){
+                $(".language-wrap").hide();
+            }
+        })
+        /*移动端语言的显示和隐藏*/
+        $(".mobile-language-textcont").on("click",function(){
+        	$(".mobile-language-list").slideToggle();
+        })
+        /*移动端隐藏语言下拉框*/
+        $(document).on("click",function(e){
+            e.preventDefault();
+            if(($(e.target).closest(".mobile-language-list").length == 0)&&($(e.target).closest(".mobile-language-wrap").length == 0)){
+                console.log("进来啦");
+                $(".mobile-language-list").slideUp();
+            }
+        })
+    })
+</script>
+</body>
+</html>
