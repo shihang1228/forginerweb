@@ -132,7 +132,6 @@ a:hover {
     cursor: pointer;
 }
 /*顶部搜索*/
-
 .form-wrap {
     width: 256px;
     height: 28px;
@@ -198,7 +197,8 @@ a:hover {
     padding: 0px;
 }
 /*--header menu nav start--*/
-
+.sub-navlist .navbar-brand>img {width: 180px;height: 135px;position: relative;top: -31px;left:0;margin-left: 0;display:block;}
+.sub-navlist .navbar-nav.nav-left{float: right !important;}
 div#navbar {
     text-align: center;
 }
@@ -334,7 +334,10 @@ div#navbar {
     display: block;
 }
 @media(max-width:1200px){
-
+.sub-navlist .navbar-brand>img {
+    width:122px;
+    height:auto;
+}
 .navbar-wrapper{
     height:65px;
     padding:7px 0;
@@ -358,6 +361,9 @@ div#navbar {
         float: left;
         width: 50%;
         padding: 0px;
+    }
+    .sub-navlist .navbar-brand>img {
+        display:none;
     }
     .navbar-wrapper {
         padding: 16px 0;
