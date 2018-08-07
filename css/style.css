@@ -333,6 +333,21 @@ div#navbar {
 .block {
     display: block;
 }
+@media(max-width:1200px){
+
+.navbar-wrapper{
+    height:65px;
+    padding:7px 0;
+}
+.navbar-brand > img{
+    width:120px;
+    height:90px;
+    position:absolute;
+    top:-8px;
+    left:50%;
+    margin-left:-60px;
+}
+}
 @media(max-width:992px) {
     .top-social {
         float: left;
