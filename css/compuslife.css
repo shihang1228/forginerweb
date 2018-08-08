@@ -40,10 +40,10 @@ body{background: #fff;}
         .sub-swiper-banner .sub-banner-text{margin-left: -570px;}
     }
     @media (max-width: 1200px){
-        .mobile-sub-compusnav{display:flex;background: #f2f3f7;line-height: 50px;margin: 1px 0 30px 0;}
+        .mobile-sub-compusnav{display:block;background: #f2f3f7;line-height: 50px;margin: -2px 0 30px 0;overflow-y: hidden;white-space: nowrap;}
         .compus-left{display:none;}
         .sub-compuslife .comp-title{display:none;}
-        .mobile-sub-compusnav .mobile-leftnav-item{border-right: 1px solid #fff;color: #2a56bf;font-size: 13px;line-height: 14px;width: 100%;height: 100%;padding: 14px 10px;display: flex;align-items: center;}
+        .mobile-sub-compusnav .mobile-leftnav-item{border-right: 1px solid #fff;color: #2a56bf;font-size: 13px;line-height: 14px;width: 100%;height: 100%;padding: 14px 10px;align-items: center;}
         .mobile-sub-compusnav .mobile-leftnav-item.active{background:url("../images/nav-bg.png") repeat center 0;color:#fff;}
         .compus-right{padding:0;}
         .compus-right .cr-col{padding:0 5px;}
