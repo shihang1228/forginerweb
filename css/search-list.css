@@ -1,0 +1,34 @@
+.sub-search-section{background:#fff;padding:150px 0 30px 0;}
+.sub-search-third-cont{background:#f0f0f0;padding:30px 40px;border-radius: 3px;margin: 0 200px;}
+.sub-search-third-cont .search-title{font-size: 28px;font-weight: bold;color:#031643;margin-bottom: 30px;}
+.sub-search-third-cont .search-input{width:79%;height:45px;outline: 0;border:0;border-radius:4px 0 0 4px;padding-left: 20px;}
+.sub-search-third-cont .search-input:focus{border-top:1px solid #050e6f;border-left:1px solid #050e6f;border-bottom:1px solid #050e6f;}
+.sub-search-third-cont .btn-search{width:20%;height:45px;display:inline-block;text-align: center;background-image: linear-gradient(to top,#09205b,#01027e);border-radius:0 4px 4px 0 ;padding-top: 9px;position: relative;
+left: -5px;}
+/*结果列表*/
+.searchlist{background:#fff;padding-bottom:60px;}
+.sl-container{margin:0 200px;}
+.search-list-ul{list-style:none;padding-left:0;}
+.search-list-ul .sl-item{border-bottom:1px solid #eaeaea;display:block;padding-top:30px;}
+.search-list-ul .sl-title{font-size:24px;color:#003333;font-weight:bold;}
+.search-list-ul .sl-text-public{font-size:14px;color:#666;}
+.search-list-ul .sl-p1{margin-top:30px;}
+.search-list-ul .sl-p2{margin-bottom:25px;}
+.sl-container .page-nav{text-align:center;margin:80px 0 90px 0;}
+@media (max-width: 1200px){
+    .sub-search-third-cont{margin:0 175px;}
+    .sl-container{margin:0 175px;}
+}
+@media (max-width: 992px){
+    .sub-search-third-cont{margin:0 75px;}
+    .sl-container{margin:0 75px;}
+}
+@media (max-width: 768px){
+    .sub-search-third-cont{margin:0 10px;padding: 30px 20px;}
+    .sl-container{margin:0 10px;}
+    .sub-search-third-cont .search-input{width:77%;height: 40px;}
+    .sub-search-section{padding: 93px 0 20px 0;}
+    .sub-search-third-cont .btn-search{padding-top:9px;height:40px;}
+    .sub-search-third-cont .btn-search img{width:20px;}
+    .sl-container .page-nav{margin:40px 0;}
+}
