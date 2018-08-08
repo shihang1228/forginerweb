@@ -63,22 +63,6 @@
 .four-tab-list .ft-item .tabs-img{width:100%;height:100%;object-fit: cover;}
 .four-tab-list .ft-item-wrap .ft-text{position:absolute;width:100%;height:100px;top:50%;margin-top:-50px;color:#fff;font-weight: bold;font-size: 24px;text-align: center;line-height: 100px;text-shadow: 1px 1px 1px #000;}
 .four-tab-list .ft-item-wrap .ft-text-spec{line-height: 50px;}
-/*foot*/
-.foot{min-height: 300px;}
-.foot .foot-img{width:100%;height:100%;object-fit: cover;}
-.foot-content{width:100%;height:550px;position:absolute;top:0;left:0;}
-.foot-content .logo-bottom{margin-top:60px;width:100%;max-width: 200px;}
-.foot-content .foot-ul-wrap{margin-top:100px;}
-.foot-content .foot-ul-item{padding:0;}
-.foot-content .foot-ul-item ul{padding:0;}
-.foot-content .foot-ul-item a{color:#fff;font-size: 14px;}
-.foot-content .foot-ul-item li{line-height: 30px;list-style: none;}
-.foot-content .copyright{color: #575956;;line-height: 40px;text-align: center;margin-top: 90px;}
-.foot-content .copyright .copy-addr{margin-right: 20px;}
-.foot-content .foot-mobile-logo{display:none;}
-.foot-content .foot-share-wrap{text-align: center;margin:40px 0;}
-.foot-content .foot-share-wrap a{margin-right: 10px;}
-.foot-content .foot-ul-wrap{margin-top: 40px;}
 
 @media(max-width:992px){
 	/*轮播图*/

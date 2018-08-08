@@ -16,7 +16,6 @@
 <!--google fonts-->
 <!-- animated-css -->
 <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-<link rel="stylesheet" href="css/index.css">
 <script src="js/wow.min.js"></script>
 <script>
  new WOW().init();
@@ -26,6 +25,8 @@
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
     body{background: #fff;}
+    .flex {width: 100%;display: flex;display: -webkit-box;}
+    .flex>* {flex: 1;-webkit-box-flex: 1;width: 100%;}
     /*顶部图片*/
     .sub-swiper-banner{min-height: 300px;position:relative;}
     .sub-swiper-banner .img-compulife{width:100%;min-height:300px;object-fit: cover;}
@@ -43,7 +44,16 @@
     .comp-leftnav .comp-leftnav-item.active .jiantou{display:block;}
     .comp-leftnav .comp-leftnav-item:hover .jiantou{display: block;}
     .comp-leftnav .comp-leftnav-item:hover span{color:#fff;}
+    .mobile-sub-compusnav{display:none;}
     /*右侧图片*/
+    .compus-right{padding-right:0;}
+    .compus-right .cr-col{padding-right:0;}
+    .compus-right .compus-link{border:1px solid #0b3991;padding: 10px;box-sizing: border-box;margin-bottom:15px;}
+    .compus-right .cr-img-wrap{width:100%;height:243px;}
+    .compus-right .compus-img-item{width:100%;height:100%;object-fit:cover;}
+    .compus-right .compus-img-text{color:#555;font-size:14px;margin-top:10px;}
+    /*分页*/
+    .page-nav{text-align: right;}
 
 
     @media (min-width: 768px){
@@ -55,23 +65,22 @@
     @media (min-width: 1200px){
         .sub-swiper-banner .sub-banner-text{margin-left: -570px;}
     }
+    @media (max-width: 1200px){
+        .mobile-sub-compusnav{display:flex;background: #f2f3f7;line-height: 50px;margin: 1px 0 30px 0;}
+        .compus-left{display:none;}
+        .sub-compuslife .comp-title{display:none;}
+        .mobile-sub-compusnav .mobile-leftnav-item{border-right: 1px solid #fff;color: #2a56bf;font-size: 13px;line-height: 14px;width: 100%;height: 100%;padding: 14px 10px;display: flex;align-items: center;}
+        .mobile-sub-compusnav .mobile-leftnav-item.active{background:url("images/nav-bg.png") repeat center 0;color:#fff;}
+        .compus-right{padding:0;}
+        .compus-right .cr-col{padding:0 5px;}
+        .compus-right .cr-img-wrap{height:140px;}
+        .page-nav{text-align: center;}
+    }
     @media (max-width: 768px){
         .sub-swiper-banner .sub-banner-text{width:100%;margin-left: 0px;text-align: center;left:0; }
         .sub-swiper-banner .sub-banner-text .sub-h1{font-size: 38px;}
         .sub-swiper-banner .sub-banner-text .sub-p{font-size: 14px;}
     }
-    .compus-right{padding-right:0;}
-    .compus-right .cr-col{padding-right:0;}
-    .compus-right .compus-link{border:1px solid #0b3991;padding: 10px;box-sizing: border-box;margin-bottom:15px;}
-    .compus-right .cr-img-wrap{width:100%;height:243px;}
-    .compus-right .compus-img-item{width:100%;height:100%;object-fit:cover;}
-    .compus-right .compus-img-text{color:#555;font-size:14px;margin-top:10px;}
-    /*分页*/
-    .page-wrap{height:270px;}
-    .page-list{list-style:none;position:absolute;top:0;right:0;margin-top:60px;margin-bottom:165px;}
-    .page-list li{float:left;}
-    .page-list li a{width:45px;height:45px;text-align:center;line-height:45px;border-right:1px solid #ddd;color:#33a3dd;border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
-    .page-list li:first-child a{border-left:1px solid #ddd;}
 </style>
 </head>
 <body>
@@ -217,8 +226,22 @@
 <!--banner end-->
 <!--compuslife start-->
 <div class="sub-compuslife">
+    <!--移动端导航 start-->
+    <div class="mobile-sub-compusnav flex">
+        <div>
+            <a href="" class="mobile-leftnav-item active">XISU In Pictures</a>
+        </div>
+        <div>
+            <a href="" class="mobile-leftnav-item">Sports & Recreation</a>
+        </div>
+        <div>
+            <a href="" class="mobile-leftnav-item">Undergraduate Education</a>
+        </div>
+    </div>
+    <!--移动端导航 end-->
     <div class="container">
         <h2 class="comp-title">Compus Life</h2>
+        <!--pc导航 start-->
         <div class="col-md-3 compus-left ">
             <ul class="comp-leftnav">
                 <li>
@@ -247,6 +270,7 @@
                 </li>
             </ul>
         </div>
+        <!--pc导航 end-->
         <div class="col-md-9 compus-right">
             <div class="col-md-4 col-sm-6 col-xs-6 cr-col">
                 <a href="" class="block compus-link">
@@ -322,18 +346,25 @@
             </div>
             <div class="clearfix"></div>
             <!--page start-->
-            <div class="page-wrap relative">
-                <ul class="page-list">
-                    <li><a href="" class="block">《</a></li>
-                    <li><a href="" class="block">1</a></li>
-                    <li><a href="" class="block">2</a></li>
-                    <li><a href="" class="block">3</a></li>
-                    <li><a href="" class="block">4</a></li>
-                    <li><a href="" class="block">5</a></li>
-                    <li><a href="" class="block">》</a></li>
-                    <div class="clearfix"></div>
+            <nav aria-label="Page navigation" class="page-nav">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
                 </ul>
-            </div>
+            </nav>
             <!--page end-->
         </div>
         <div class="clearfix"></div>
