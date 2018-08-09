@@ -25,6 +25,31 @@
 <!-- animated-css -->
 <script src="js/modernizr.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+    .sub-swiper-banner{background:url("images/coo-bg.jpg") no-repeat;}
+    .sub-swiper-banner .swiper-intro{font-size:14px;color:#fff;height: 40px;margin: 30px 0;padding: 0 10px;}
+    .swiper-container-horizontal > .swiper-pagination-bullets{bottom:118px;}
+    .swiper-pagination-bullet-active{background:#fff;}
+    .sub-swiper-banner .img-swiper-wrap{width:100%;height:456px;}
+    .sub-swiper-banner .img-swiper-wrap .img-swiper{width:100%;height:100%;object-fit:cover;}
+    /*导航*/
+    .sub-tapbanner{background:#00081c;height:100px;display: flex;align-items: center;}
+    .sub-tapbanner .mobile-sub-compusnav{display:block;overflow-y: hidden;overflow-x: auto;height: 100px;white-space: nowrap;}
+    .sub-tapbanner .mobile-sub-compusnav::-webkit-scrollbar{height:5px;background:#00081c;}
+    .sub-tapbanner .mobile-sub-compusnav::-webkit-scrollbar-thumb{background:#fff;}
+    .sub-tapbanner .mobile-sub-compusnav .mobile-leftnav-item{display: inline-block;max-width: 300px;text-align: center;height: 100px;align-items: center;padding: 0 8px;white-space: normal;}
+    .sub-tapbanner .mobile-sub-compusnav .mobile-leftnav-item span{display:flex;width:100%;height:100%;align-items:center;}
+    .mobile-sub-compusnav .mobile-leftnav-item.active{background-image: linear-gradient(to top,#011441,#09317f);color:#fff;}
+    @media (max-width: 1200px){
+        .sub-swiper-banner .img-swiper-wrap{height:376px;}
+    }
+    @media (max-width: 992px){
+        .sub-swiper-banner .img-swiper-wrap{height:288px;}
+    }
+    @media (max-width: 768px){
+        .sub-swiper-banner .container{padding-left:0;padding-right:0;}
+    }
+</style>
 </head>
 <body>
 <!--header-top start here-->
@@ -165,180 +190,53 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide relative">
                     <a href="">
-                        <img src="images/compuslife.jpg" width="100%" alt="" class="img-swiper">
+                        <div class="img-swiper-wrap"><img src="images/test-swiper.jpg" width="100%" alt="" class="img-swiper"></div>
                         <div class="swiper-text">
-                            <p class="swiper-prod">As the World Cup heads into the semi-finals, see how a Duke scholar uses soccer to explore politics, history and culture—in four languages</p>
-                            <span class="btn-readmore">Read more <i class="iconfont icon-right">&#x2301;</i></span>
+                            <p class="swiper-intro word-wrap-line2">Based on Xi'an International Studies University (XISU), the "Center European and American Literature Research" is one of the first key research bases (at university level) for philosophy and social sciences in Shaanxi, as approved by Department of Education of </p>
                         </div>
                     </a>
                 </div>
                 <div class="swiper-slide relative">
                     <a href="">
-                        <img src="images/compuslife.jpg" width="100%" alt="" class="img-swiper">
+                        <div class="img-swiper-wrap"><img src="images/test-swiper.jpg" width="100%" alt="" class="img-swiper"></div>
                         <div class="swiper-text">
-                            <p class="swiper-prod">As the World Cup heads into the semi-finals, see how a Duke scholar uses soccer to explore politics, history and culture—in four languages</p>
-                            <span class="btn-readmore">Read more <i class="iconfont icon-right">&#x2301;</i></span>
+                            <p class="swiper-intro word-wrap-line2">Based on Xi'an International Studies University (XISU), the "Center European and American Literature Research" is one of the first key research bases (at university level) for philosophy and social sciences in Shaanxi, as approved by Department of Education of </p>
                         </div>
                     </a>
                 </div>
                 <div class="swiper-slide relative">
                     <a href="">
-                        <img src="images/compuslife.jpg" width="100%" alt="" class="img-swiper">
+                        <div class="img-swiper-wrap"><img src="images/test-swiper.jpg" width="100%" alt="" class="img-swiper"></div>
                         <div class="swiper-text">
-                            <p class="swiper-prod">As the World Cup heads into the semi-finals, see how a Duke scholar uses soccer to explore politics, history and culture—in four languages</p>
-                            <span class="btn-readmore">Read more <i class="iconfont icon-right">&#x2301;</i></span>
+                            <p class="swiper-intro word-wrap-line2">Based on Xi'an International Studies University (XISU), the "Center European and American Literature Research" is one of the first key research bases (at university level) for philosophy and social sciences in Shaanxi, as approved by Department of Education of </p>
                         </div>
                     </a>
                 </div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 </div>
 <!--banner end-->
-<!--compuslife start-->
-<div class="sub-compuslife">
-    <!--移动端导航 start-->
-    <div class="mobile-sub-compusnav">
-        <a href="" class="mobile-leftnav-item active">XISU In Pictures</a>
-        <a href="" class="mobile-leftnav-item">Sports & Recreation</a>
-        <a href="" class="mobile-leftnav-item">Undergraduate Education</a>
-        <a href="" class="mobile-leftnav-item">XISU Volunteering</a>
-    </div>
-    <!--移动端导航 end-->
+<!--topbanner start-->
+<div class="sub-tapbanner">
     <div class="container">
-        <h2 class="comp-title">Compus Life</h2>
-        <!--pc导航 start-->
-        <div class="col-md-3 compus-left ">
-            <ul class="comp-leftnav">
-                <li>
-                    <a href="" class="comp-leftnav-item active">
-                        <span>XISU In Pictures</span>
-                        <img src="images/jiantou.jpg" class="jiantou" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="comp-leftnav-item">
-                        <span>Sports & Recreation</span>
-                        <img src="images/jiantou.jpg" class="jiantou" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="comp-leftnav-item">
-                        <span>Undergraduate Education</span>
-                        <img src="images/jiantou.jpg" class="jiantou" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="comp-leftnav-item">
-                        <span>XISU Volunteering</span>
-                        <img src="images/jiantou.jpg" class="jiantou" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!--pc导航 end-->
-        <div class="col-md-9 compus-right">
-            <div class="col-md-4 col-sm-6 col-xs-6 cr-col">
-                <a href="images/testimg6.jpg" data-lightbox="sompuslife" data class="block compus-link">
-                    <div class="cr-img-wrap">
-                        <img src="images/testimg6.jpg" class="compus-img-item" alt="" />
-                    </div>
-                    <p class="compus-img-text word-wrap">Xi’an, the eternal city,  ...</p>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 cr-col">
-                <a href="images/testimg4.jpg" data-lightbox="sompuslife" data class="block compus-link">
-                    <div class="cr-img-wrap">
-                        <img src="images/testimg6.jpg" class="compus-img-item" alt="" />
-                    </div>
-                    <p class="compus-img-text word-wrap">Xi’an, the eternal city,  ...</p>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 cr-col">
-                <a href="images/testimg6.jpg" data-lightbox="sompuslife" data class="block compus-link">
-                    <div class="cr-img-wrap">
-                        <img src="images/testimg6.jpg" class="compus-img-item" alt="" />
-                    </div>
-                    <p class="compus-img-text word-wrap">Xi’an, the eternal city,  ...</p>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 cr-col">
-                <a href="images/testimg6.jpg" data-lightbox="sompuslife" data class="block compus-link">
-                    <div class="cr-img-wrap">
-                        <img src="images/testimg6.jpg" class="compus-img-item" alt="" />
-                    </div>
-                    <p class="compus-img-text word-wrap">Xi’an, the eternal city,  ...</p>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 cr-col">
-                <a href="images/testimg6.jpg" data-lightbox="sompuslife" data class="block compus-link">
-                    <div class="cr-img-wrap">
-                        <img src="images/testimg6.jpg" class="compus-img-item" alt="" />
-                    </div>
-                    <p class="compus-img-text word-wrap">Xi’an, the eternal city,  ...</p>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 cr-col">
-                <a href="images/testimg6.jpg" data-lightbox="sompuslife" data class="block compus-link">
-                    <div class="cr-img-wrap">
-                        <img src="images/testimg6.jpg" class="compus-img-item" alt="" />
-                    </div>
-                    <p class="compus-img-text word-wrap">Xi’an, the eternal city,  ...</p>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 cr-col">
-                <a href="images/testimg6.jpg" data-lightbox="sompuslife" data class="block compus-link">
-                    <div class="cr-img-wrap">
-                        <img src="images/testimg6.jpg" class="compus-img-item" alt="" />
-                    </div>
-                    <p class="compus-img-text word-wrap">Xi’an, the eternal city,  ...</p>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 cr-col">
-                <a href="images/testimg6.jpg" data-lightbox="sompuslife" data class="block compus-link">
-                    <div class="cr-img-wrap">
-                        <img src="images/testimg6.jpg" class="compus-img-item" alt="" />
-                    </div>
-                    <p class="compus-img-text word-wrap">Xi’an, the eternal city,  ...</p>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 cr-col">
-                <a href="images/testimg6.jpg" data-lightbox="sompuslife" data class="block compus-link">
-                    <div class="cr-img-wrap">
-                        <img src="images/testimg6.jpg" class="compus-img-item" alt="" />
-                    </div>
-                    <p class="compus-img-text word-wrap">Xi’an, the eternal city,  ...</p>
-                </a>
-            </div>
+        <!--导航 start-->
+        <div class="mobile-sub-compusnav">
+            <a href="" class="mobile-leftnav-item active"><span>International Cooperation & Exchange Office</span></a>
+            <a href="" class="mobile-leftnav-item"><span>School of Chinese Studies·School of Central Asia</span></a>
+            <a href="" class="mobile-leftnav-item"><span>Promotion Base for Chinse Language · Office of Confucius Institute</span></a>
             <div class="clearfix"></div>
-            <!--page start-->
-            <nav aria-label="Page navigation" class="page-nav">
-                <ul class="pagination">
-                    <li>
-                        <a href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li>
-                        <a href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!--page end-->
         </div>
-        <div class="clearfix"></div>
+        <!--导航 end-->
     </div>
 </div>
-<!--compuslife end-->
+<!--topbanner end-->
 <!--footer start-->
 <div class="foot relative">
     <img src="images/img-bottom.png" class="foot-img">
@@ -412,6 +310,10 @@
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         });
     })
