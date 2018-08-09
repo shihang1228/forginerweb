@@ -30,5 +30,8 @@ left: -5px;}
     .sub-search-section{padding: 93px 0 20px 0;}
     .sub-search-third-cont .btn-search{padding-top:9px;height:40px;}
     .sub-search-third-cont .btn-search img{width:20px;}
+    .search-list-ul .sl-title{font-size: 16px;}
+    .search-list-ul .sl-text-public{font-size: 13px;}
+    .search-list-ul .sl-p1{margin-top: 20px;}
     .sl-container .page-nav{margin:40px 0;}
 }
