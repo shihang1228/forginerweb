@@ -27,8 +27,8 @@ body{overflow-x:hidden;}
 }
 @media (max-width: 768px){
     .sub-swiper-banner .container{padding-left:0;padding-right:0;}
-    .sub-tapbanner .mobile-sub-compusnav::-webkit-scrollbar{height:0px;background:none;}
-    .sub-tapbanner .mobile-sub-compusnav::-webkit-scrollbar-thumb{background:none;}
+    /*.sub-tapbanner .mobile-sub-compusnav::-webkit-scrollbar{height:0px;background:none;}
+    .sub-tapbanner .mobile-sub-compusnav::-webkit-scrollbar-thumb{background:none;}*/
     /*coo内容*/
     .coo-content .coo-title{font-size: 22px;padding:40px 0;}
     .coo-content .coo-img{width:96%;}

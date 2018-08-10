@@ -1,0 +1,11 @@
+.aboutus{padding:144px 0;background:url("../images/bg-event.png") repeat center 0;}
+.sub-topnav{width:420px;left:50%;margin-left: -210px;}
+.aboutus .ab-content{padding-left: 15px;padding-right: 0;}
+@media (max-width: 992px){
+    .sub-topnav{width:300px;margin-left: -150px;}
+}
+@media (max-width: 768px){
+    .aboutus{padding:90px 0;}
+    .sub-topnav{width:300px;margin-left: -150px;bottom: -32px;}
+    .sub-topnav .st-item-link{width:139px;}
+}
