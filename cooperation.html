@@ -17,7 +17,7 @@
 <!-- animated-css -->
 <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.css">
-<link rel="stylesheet" href="css/compuslife.css">
+<link rel="stylesheet" href="css/cooperation.css">
 <script src="js/wow.min.js"></script>
 <script>
  new WOW().init();
@@ -25,31 +25,6 @@
 <!-- animated-css -->
 <script src="js/modernizr.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style type="text/css">
-    .sub-swiper-banner{background:url("images/coo-bg.jpg") no-repeat;}
-    .sub-swiper-banner .swiper-intro{font-size:14px;color:#fff;height: 40px;margin: 30px 0;padding: 0 10px;}
-    .swiper-container-horizontal > .swiper-pagination-bullets{bottom:118px;}
-    .swiper-pagination-bullet-active{background:#fff;}
-    .sub-swiper-banner .img-swiper-wrap{width:100%;height:456px;}
-    .sub-swiper-banner .img-swiper-wrap .img-swiper{width:100%;height:100%;object-fit:cover;}
-    /*导航*/
-    .sub-tapbanner{background:#00081c;height:100px;display: flex;align-items: center;}
-    .sub-tapbanner .mobile-sub-compusnav{display:block;overflow-y: hidden;overflow-x: auto;height: 100px;white-space: nowrap;}
-    .sub-tapbanner .mobile-sub-compusnav::-webkit-scrollbar{height:5px;background:#00081c;}
-    .sub-tapbanner .mobile-sub-compusnav::-webkit-scrollbar-thumb{background:#fff;}
-    .sub-tapbanner .mobile-sub-compusnav .mobile-leftnav-item{display: inline-block;max-width: 300px;text-align: center;height: 100px;align-items: center;padding: 0 8px;white-space: normal;}
-    .sub-tapbanner .mobile-sub-compusnav .mobile-leftnav-item span{display:flex;width:100%;height:100%;align-items:center;}
-    .mobile-sub-compusnav .mobile-leftnav-item.active{background-image: linear-gradient(to top,#011441,#09317f);color:#fff;}
-    @media (max-width: 1200px){
-        .sub-swiper-banner .img-swiper-wrap{height:376px;}
-    }
-    @media (max-width: 992px){
-        .sub-swiper-banner .img-swiper-wrap{height:288px;}
-    }
-    @media (max-width: 768px){
-        .sub-swiper-banner .container{padding-left:0;padding-right:0;}
-    }
-</style>
 </head>
 <body>
 <!--header-top start here-->
@@ -237,6 +212,28 @@
     </div>
 </div>
 <!--topbanner end-->
+<!--coo-content start-->
+<div class="coo-content">
+    <div class="container">
+        <h1 class="coo-title">Cooperation & Exchange</h1>
+        <div class="coo-img">
+            <img src="images/testimg4.jpg" width="100%" alt="">
+        </div>
+        <div class="coo-content-wrap">
+            1. Center for European and American Literature Research
+
+            Based on Xi'an International Studies University (XISU), the "Center European and American Literature Research" is one of the first key research bases (at university level) for philosophy and social sciences in Shaanxi, as approved by Department of Education of Shaanxi Provincial Government in 2005. It was formerly known as "Center for European and American Language and Literature Research" and officially established in June, 2007, and later changed to current name in October, 2010. Currently, the President of XISU, Professor Wang Junzhe serves as the Director of the Center. The Center consists of Institute of Anglo-American Literatures, Institute of European Literatures, and Institute of Comparative Literatures, etc. that are committed to the studies on above-mentioned literatures.
+
+
+            2.Center for Foreign Linguistics and Applied Linguistics Research
+
+            Based on Xi'an International Studies University (XISU), the "Center for Foreign Linguistics and Applied Linguistics Research" is one of the key research bases (at university level) for philosophy and social sciences in Shaanxi, as approved by the Department of Education of Shaanxi Provincial Government in 2009. It was officially established in December, 2012.
+
+            The Vice President of XISU, Professor Dang Zhengsheng serves as the Director of the Center. The Center has several institutes for both theoretical and applied linguistics, intercultural communication, and translation, etc., which is committed to fundamental research in linguistics. The Center is also the largest resource hub for foreign linguistics and applied linguistics in northwestern China.
+        </div>
+    </div>
+</div>
+<!--coo-content end-->
 <!--footer start-->
 <div class="foot relative">
     <img src="images/img-bottom.png" class="foot-img">
@@ -303,7 +300,7 @@
         /*swiper*/
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
-            spaceBetween: 30,
+            spaceBetween: 0,
             autoplay:200,
             loop: true,
             speed:300,
