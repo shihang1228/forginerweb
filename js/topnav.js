@@ -9,7 +9,7 @@ $(function(){
     })
     /*pc端隐藏语言下拉框*/
     $(document).on("click",function(e){
-        e.preventDefault();
+        //e.preventDefault();
         if(($(e.target).closest(".language-wrap").length == 0) && ($(e.target).closest(".language-cont").length == 0)){
             $(".language-wrap").hide();
         }
@@ -20,7 +20,7 @@ $(function(){
     })
     /*移动端隐藏语言下拉框*/
     $(document).on("click",function(e){
-        e.preventDefault();
+        //e.preventDefault();
         if(($(e.target).closest(".mobile-language-list").length == 0)&&($(e.target).closest(".mobile-language-wrap").length == 0)){
             $(".mobile-language-list").slideUp();
         }
